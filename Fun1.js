@@ -18,3 +18,4 @@ else{
 res=`Mark BMI ${BMIMark} is Higher then John`;
 }
 console.log(res);
+console.log('John emi is',markHigherBMI);

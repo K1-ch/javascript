@@ -5,7 +5,7 @@
 }
 body{
     background-color:rgb(235, 214, 163);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:cursive;
    padding:75px;
 }
 h1{
@@ -40,10 +40,10 @@ input,button{
     padding:10px;
     font-size: 20;
 }
-#your-name h2{
+#your-name, h2{
     color: oldlace;
 }
-#course-img,#hello{
+#course-img{
     width: 300px;
      height:200px;
 }

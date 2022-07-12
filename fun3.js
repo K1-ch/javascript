@@ -1,5 +1,6 @@
 //truthy an falsy values 
 //five undefined falsy values are 0,'',undefined,null,NaN
+
 var money='';//this is false
 //var money=' ';//this is true
 if(money){
