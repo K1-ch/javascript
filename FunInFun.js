@@ -1,30 +1,21 @@
-//Function calling inside a function
-`use strict`
-
-
-function Avr( ){
-
-    return Sum()/3;//calling function inside a function.
-}
-function Sum(){
-    return 10+20+30;
-    }
-
-console.log(Avr());
-
-//example 2
-function drive(Name){
-    if(hello(20)==false){
-    return `${Name} cannot drive`;
-    }
- return `${Name} can drive`;
+function checkAge( age){
+    (age>18) ? vote(): notvote();
 }
 
-//returning true or false in hello
-hello=function vision(age){
-    if(age>=18){
-        return true;
-    }
-    return false;
+checkAge(12);
+function vote(){
+    console.log('You are eligible to vote');
 }
-console.log(drive('Sita'));
+
+function notvote(){
+    console.log('You are nt eligible to vote');
+}
+
+function avg(){
+return sum(10,20)/2;//calling another fun from a fun
+}
+
+function sum(num1,num2){
+    return num1+num2;
+}
+console.log(avg());

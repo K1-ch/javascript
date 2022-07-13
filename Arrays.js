@@ -7,3 +7,5 @@ function op(){
     console.log(m[2]-30);//40-30
 }
 op();
+console.log(m);// print the whole array
+console.log(m.length);
