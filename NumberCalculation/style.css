@@ -1,22 +1,28 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 4px;
+  margin: 4px;
   box-sizing: border-box;
+  border-radius: 5px;
+  border-color: hotpink;
+  text-align: justify;
 }
 
 body {
   background-color: rgb(244, 252, 233);
-  padding-left: 2px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: black;
   font-size: 20px;
   text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
-.reverse {
+
+.rev {
   color: black;
   font-size: 18px;
   text-align: center;
@@ -24,17 +30,28 @@ h2 {
 
 div {
   text-align: center;
-  margin: 2px;
-  padding: 2px;
+  margin-right: 28px;
 }
 
-.btn1 {
-  font-size: 14px;
+.btn1,
+.btn2 {
+  font-size: 15px;
+  font-family: cursive;
+  margin-left: 28px;
+  border-style: solid;
 }
 
-.output {
-  color: red;
+.output1,
+.output2 {
+  color: brown;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 18px;
+}
+
+#jstext {
+  background-color: lightgreen;
+  text-align: center;
+  font-size: 18px;
+  color: black;
 }
