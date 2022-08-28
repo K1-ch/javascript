@@ -5,13 +5,15 @@
 //these var in its higher scope that is global scope here
 
 function calcAge(birthYear) {
-  const age = 2022 - birthYear;
+  let age = 2022 - birthYear;
   const firstName = "Kiran Chauhan";
 
   function print() {
+    age = 20; // we can assign new values to the variable in different scope...
     const info = `Hello I'm ${firstName} and i am ${age} years old`;
     console.log(info);
   }
+
   print();
 
   return age;
