@@ -23,8 +23,9 @@ const value2 = {
       close: "4 p.m",
     },
   },
-  address() {
-    console.log("Gzd");
+  subject(...arr) {
+    const [x, , y, ...others] = arr;
+    return [x, y, others];
   },
 };
 /*---Way 1 to check if the college is open on tue or nt-----*/
@@ -45,11 +46,17 @@ for (const days of weekdays) {
 
 /*---Optional Chaining On methods------*/
 
-// console.log(value2.address()?.() ?? `address not given yet`);
-// console.log(value2.game()?.() ?? `address not given yet`);
+console.log(
+  value2.subject?.("Math", "Science", "English", "Hindi", "Gk", "Moral") ??
+    "address not given yet"
+);
+console.log(value2.game?.() ?? "game is not given yet");
 
 /*---Optional Chaining On Arrays------*/
+
+const user1 = [
+  { friend1: "Pooja", friend2: "Rahul", friend3: "Laxmi", friend4: "Kiran" },
+];
+console.log(user1[0]?.friend3 ?? "user does not exist ");
 const user = [];
-console.log(user.length > 0 ? user[0] : `user does not exist `);
-const user1 = ["Pooja", "Rahul", "Laxmi", ""];
-console.log(user1.length > 0 ? user1[0] : `user does not exist `);
+console.log(user[0]?.firstname ?? "user does not exist ");
