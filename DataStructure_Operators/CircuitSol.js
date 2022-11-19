@@ -1,6 +1,7 @@
 /*-- problem with logical operator in objects---- */
 /*--here it is may be possible that the Student get 0 marks but 0 is a falsy value
 hence the marks value is assigned to 10 this leads to wrong information-----*/
+
 const value = {
   firstname: "Kiran",
   lastname: "chauhan",
